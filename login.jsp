@@ -1,0 +1,17 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: jersey
+  Date: 4/16/20
+  Time: 9:28 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Login</title>
+    <base href="<%=request.getContextPath()+"/"%>">
+</head>
+<body>
+
+</body>
+</html>
