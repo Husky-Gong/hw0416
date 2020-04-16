@@ -10,8 +10,52 @@
 <head>
     <title>Login</title>
     <base href="<%=request.getContextPath()+"/"%>">
-</head>
-<body>
+    <!-- 引入easyui中主题风格的css  -->
+    <link rel="stylesheet" type="text/css" href="easyui/themes/black/easyui.css"/>
+    <%--引入easyui图标的css--%>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
 
+    <%--引入easyui中demo.css--%>
+    <link  rel="stylesheet" type="text/css" href="easyui/themes/demo.css">
+
+    <%--引入jQ的依赖文件  type：引入文件类型--%>
+    <script type="text/javascript" src="easyui/jquery.min.js"></script>
+    <%--引入easyui中依赖的js文件--%>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+
+    <%--引入easyui中中文js依赖--%>
+    <script type="text/javascript" src="easyui/easyui-lang-zh_CN.js"></script>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body style="background-color: #00bbee">
+    <div style="margin-top: 120px; margin-left: 407px">
+        <div id="di" class="easyui-panel" title="登录"  style="width:400px;height: 300px"
+             data-options="iconCls:'icon-help',closable:false,
+          collapsible:false,minimizable:true,maximizable:true">
+
+
+            <div style="text-align: center;margin-top: 80px">
+
+                <form>
+                    <div style="margin-bottom: 25px">
+                        <span>USERNAME</span>
+                        <input type="text" class="easyui-textbox" data-options="required:true"/>
+                    </div>
+                    <div style="margin-bottom: 25px">
+                        <span>PASSWORD</span>
+                        <input type="text" class="easyui-textbox" data-options="required:true"/>
+                    </div>
+
+                    <div>
+                        <button class="easyui-linkbutton" data-options="iconCls:'icon-search'">SUBMIT</button>
+                        <button class="easyui-linkbutton" data-options="iconCls:'icon-clear'">CLEAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
