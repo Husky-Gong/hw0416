@@ -27,12 +27,21 @@
     <script type="text/javascript" src="easyui/easyui-lang-zh_CN.js"></script>
 
     <style type="text/css">
-
+        #divElement{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            margin-top: 0;
+            margin-left:0;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
     </style>
 </head>
 <body style="background-color: #00bbee">
-    <div style="margin-top: 120px; margin-left: 407px">
-        <div id="di" class="easyui-panel" title="登录"  style="width:400px;height: 300px"
+    <div id='divElement'>
+        <div id="di" class="easyui-panel" title="LOGIN" style="width:400px;height: 300px"
              data-options="iconCls:'icon-help',closable:false,
           collapsible:false,minimizable:true,maximizable:true">
 
